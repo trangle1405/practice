@@ -18,14 +18,14 @@ class Queue
     public function enqueue($item)
     {
         if (count($this->queue) < $this->limit) {
-            return array_unshift($this->queue, $item);
+            return array_push($this->queue, $item);
         } else
             echo "Queue is full";
     }
 
     public function dequeue(){
         if (!$this->isEmpty()){
-            return array_pop($this->queue);
+            return array_shift($this->queue);
         } else
             echo "Queue is empty";
     }

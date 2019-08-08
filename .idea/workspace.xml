@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8232eb70-10cb-4cf5-aa4e-7843a58dc6d5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cau-truc-du-lieu/LinkedList.php" beforeDir="false" afterPath="$PROJECT_DIR$/cau-truc-du-lieu/LinkedList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cau-truc-du-lieu/Stack.php" beforeDir="false" afterPath="$PROJECT_DIR$/cau-truc-du-lieu/Stack.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cau-truc-du-lieu/Queues.php" beforeDir="false" afterPath="$PROJECT_DIR$/cau-truc-du-lieu/Queues.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,20 +21,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cau-truc-du-lieu/Queues.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+            <state relative-caret-position="68">
+              <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cau-truc-du-lieu/Stack.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+            <state relative-caret-position="227">
+              <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -64,6 +63,7 @@
         <option value="$PROJECT_DIR$/LinkedList.php" />
         <option value="$PROJECT_DIR$/cau-truc-du-lieu/LinkedList.php" />
         <option value="$PROJECT_DIR$/cau-truc-du-lieu/Stack.php" />
+        <option value="$PROJECT_DIR$/cau-truc-du-lieu/Queues.php" />
       </list>
     </option>
   </component>
@@ -129,12 +129,12 @@
       <workItem from="1565064733828" duration="6764000" />
       <workItem from="1565141741195" duration="15554000" />
       <workItem from="1565193482821" duration="668000" />
-      <workItem from="1565226987216" duration="12070000" />
+      <workItem from="1565226987216" duration="12407000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35056000" />
+    <option name="totallyTimeSpent" value="35393000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -219,17 +219,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cau-truc-du-lieu/Queues.php">
+    <entry file="file://$PROJECT_DIR$/cau-truc-du-lieu/Stack.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        <state relative-caret-position="227">
+          <caret line="29" column="14" lean-forward="true" selection-start-line="29" selection-start-column="14" selection-end-line="29" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cau-truc-du-lieu/Stack.php">
+    <entry file="file://$PROJECT_DIR$/cau-truc-du-lieu/Queues.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="28" column="31" lean-forward="true" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
+        <state relative-caret-position="68">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
         </state>
       </provider>
     </entry>
