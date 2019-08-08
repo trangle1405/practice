@@ -1,4 +1,7 @@
 <?php
+
+//Khai bao mang
+
 $students_classA = ["Trang", "Anh", "Hai"];
 $students_classB = array("Hoa", "Dung", "Hanh");
 $ageOfStudent = ["Trang" => 23, "Hong" => 18, "Huy" => 22];
@@ -7,6 +10,9 @@ $classA = [
     ["Hai", 20, "Male"],
     ["Anh", 22, "Female"]
 ];
+
+//duyet mang
+
 
 function showNameInArray($arrayName)
 {
@@ -28,7 +34,7 @@ function showInfomationOfStudent($students)
 
 
 
-
+//thuc hanh cac ham
 
 //echo is_array($classA);
 //
@@ -94,23 +100,30 @@ print_r(array_change_key_case($ageOfStudent, CASE_UPPER));
 
 $students_classA = ["Trang", "Anh", "Hai", "Hoa", "Dung", "Hanh"];
 
-// Tim kiem nhi phan khong duoc
-//function findNameInClass($class, $name)
-//{
-//    $left = 0;
-//    $right = count($class) - 1;
-//    while ($left <= $right) {
-//        $mid_key = floor(($left + $right) / 2);
-//        if ($name === $class[$mid_key]) {
-//            return $mid_key;
-//        } else if ($name < $class[$mid_key]) {
-//            $right = $mid_key - 1;
-//        } else if ($name > $class[$mid_key]) {
-//            $left = $mid_key + 1;
-//        }
-//    }
-//    return -1;
-//}
+
+// Tim kiem nhi phan chi dung tim so????
+
+
+function findNumberByBinarySearchRecursion($arrayNumber, $left, $right, $x)
+{
+    $mid_Index = floor(($left + $right) / 2);
+
+    if ($left > $right) {
+        return -1;
+    }
+
+    if ($x === $arrayNumber[$mid_Index]) {
+        return $mid_Index;
+    }
+    if ($x > $arrayNumber[$mid_Index]) {
+        return findNumberByBinarySearchRecursion($arrayNumber, $mid_Index + 1, $right, $x);
+    }
+    if ($x < $arrayNumber[$mid_Index]) {
+        return findNumberByBinarySearchRecursion($arrayNumber, $left, $right - 1, $x);
+    }
+}
+
+//tim kiem tuyen tinh
 
 function findNameInClass($array, $name){
     for ($index = 0; $index<count($array); $index++){
@@ -121,9 +134,9 @@ function findNameInClass($array, $name){
     }
     return -1;
 }
-//
-//$students_classA = ["Trang", "Anh", "Hai", "Hoa", "Dung", "Hanh"];
-//echo (findNameInClass($students_classA, "Anh"));
+
+$students_classA = ["Trang", "Anh", "Hai", "Hoa", "Dung", "Hanh"];
+echo (findNameInClass($students_classA, "Anh"));
 
 
 
