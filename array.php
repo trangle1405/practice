@@ -12,6 +12,10 @@ $classA = [
 ];
 
 //duyet mang
+$ageOfStudent = ["Trang" => 23, "Hong" => 18, "Huy" => 22];
+foreach ($ageOfStudent as $name=>$age){
+    echo $name." is ".$age;
+}
 
 
 function showNameInArray($arrayName)
@@ -101,7 +105,7 @@ print_r(array_change_key_case($ageOfStudent, CASE_UPPER));
 $students_classA = ["Trang", "Anh", "Hai", "Hoa", "Dung", "Hanh"];
 
 
-// Tim kiem nhi phan chi dung tim so????
+// Tim kiem nhi phan
 
 
 function findNumberByBinarySearchRecursion($arrayNumber, $left, $right, $x)
