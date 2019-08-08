@@ -77,6 +77,7 @@ class LinkList
     }
 
 
+
     public function readList()
     {
         $listData = array();
@@ -90,8 +91,5 @@ class LinkList
             echo $value." ";
         }
     }
-
-
-
 
 }
