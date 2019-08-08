@@ -1,16 +1,16 @@
 <?php
 
-function findNumberByBinarySearch($array, $x)
+function findNumberByBinarySearch($arrayNumber, $findNumber)
 {
     $left = 0;
-    $right = count($array) - 1;
+    $right = count($arrayNumber) - 1;
     while ($left <= $right) {
         $mid = floor(($left + $right) / 2);
-        if ($x === $array[$mid]) {
+        if ($x === $arrayNumber[$mid]) {
             return $mid;
-        } else if ($x < $array[$mid]) {
+        } else if ($x < $arrayNumber[$mid]) {
             $right = $mid - 1;
-        } else if ($x > $array[$mid]) {
+        } else if ($x > $arrayNumber[$mid]) {
             $left = $mid + 1;
         }
     }
