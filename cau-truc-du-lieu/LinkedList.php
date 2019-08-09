@@ -92,4 +92,36 @@ class LinkList
         }
     }
 
+    public function deleteFirstNode()
+    {
+        $temp = $this->firstNode;
+        $this->firstNode = $this->firstNode->next;
+        if($this->firstNode != NULL)
+            $this->count--;
+        return $temp;
+    }
+
+    public function totalNodes()
+    {
+        return  "Total Node: ".$this->count."<br>";
+    }
+
 }
+
+$linkedList = new LinkList();
+$linkedList->insertFirst(1);
+$linkedList->insertFirst(2);
+$linkedList->insertFirst(3);
+$linkedList->insertFirst(4);
+$linkedList->insertLast(5);
+echo '<pre>';
+print_r($linkedList);
+echo '<pre/>';
+
+$linkedList->deleteFirstNode();
+
+echo '<pre>';
+print_r($linkedList);
+echo '<pre/>';
+
+$linkedList->totalNodes();
