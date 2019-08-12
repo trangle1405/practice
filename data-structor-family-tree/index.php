@@ -106,7 +106,7 @@ $treeA->addNode($D, $G);
 $treeA->addNode($D, $H);
 $treeA->addNode($D, $I);
 
-$dataMustFind = "E";
+$dataMustFind = "J";
 
 echo "<pre>";
 print_r($treeA->readTree($treeA->root));
