@@ -46,22 +46,23 @@ class Tree
         $result = $this->searchInTree($this->root, $parentNode->data);
         if ($result != null) {
             $parentNode->addChild($childNode);
-        }
-        else echo "khong tim thay $parentNode->data";
+        } else echo "khong tim thay $parentNode->data";
     }
 
-    public function readTree($node, $listData = array())
+    public function readTree($node, $lever = 0)
     {
         if ($node != null) {
-            array_push($listData, $node);
+            echo str_repeat('-', $lever);
+            echo ($node->data) . "<br>";
         }
         if ($node->firstChild != null) {
-            $this->readTree($node->firstChild, $listData);
+            $leverChild = $lever + 1;
+            $this->readTree($node->firstChild, $leverChild);
         }
         if ($node->subling != null) {
-            $this->readTree($node->subling, $listData);
+            $this->readTree($node->subling, $lever);
         }
-        return $listData;
+
     }
 
     public function searchInTree($node, $dataMustFind)
@@ -70,7 +71,7 @@ class Tree
             return $node;
         }
         if ($node->data === $dataMustFind) {
-            return $node;
+            return $node->data;
         }
         $result = null;
         if ($node->subling != null) {
