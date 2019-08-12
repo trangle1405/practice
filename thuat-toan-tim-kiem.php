@@ -6,11 +6,11 @@ function findNumberByBinarySearch($arrayNumber, $findNumber)
     $right = count($arrayNumber) - 1;
     while ($left <= $right) {
         $mid = floor(($left + $right) / 2);
-        if ($x === $arrayNumber[$mid]) {
+        if ($findNumber === $arrayNumber[$mid]) {
             return $mid;
-        } else if ($x < $arrayNumber[$mid]) {
+        } else if ($findNumber < $arrayNumber[$mid]) {
             $right = $mid - 1;
-        } else if ($x > $arrayNumber[$mid]) {
+        } else if ($findNumber > $arrayNumber[$mid]) {
             $left = $mid + 1;
         }
     }
