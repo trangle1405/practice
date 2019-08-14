@@ -10,6 +10,7 @@ class Product
     public $quantity;
     public $description;
 
+
     public function __construct($name, $price, $quantity, $description)
     {
         $this->name = $name;
