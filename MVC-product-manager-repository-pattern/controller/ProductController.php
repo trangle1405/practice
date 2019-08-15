@@ -3,22 +3,22 @@
 namespace Controller;
 
 use Model\Product;
-use Repository\ProductRepository;
+use Service\ProductServiceImpl;
 
 
 class ProductController
 {
-    public $productRepository;
+    public $productServiceImpl;
 
     public function __construct()
     {
 
-        $this->productRepository = new ProductRepository();
+        $this->productServiceImpl = new ProductServiceImpl();
     }
 
     public function index()
     {
-        $products = $this->productRepository->getAll();
+        $products = $this->productServiceImpl->getAll();
         include "view/list.php";
     }
 
@@ -32,7 +32,7 @@ class ProductController
             $quantity = $_POST["quantity"];
             $description = $_POST["description"];
             $product = new Product($name, $price, $quantity, $description);
-            $this->productRepository->create($product);
+            $this->productServiceImpl->create($product);
             header("Location:index.php");
         }
     }
@@ -41,12 +41,12 @@ class ProductController
     {
         if ($_SERVER["REQUEST_METHOD"] === "GET") {
             $id = $_GET["id"];
-            $product = $this->productRepository->get($id);
+            $product = $this->productServiceImpl->get($id);
             include "view/edit.php";
         } else {
             $id = $_POST['id'];
             $product = new Product($_POST['name'], $_POST['price'], $_POST['quantity'], $_POST['description']);
-            $this->productRepository->update($id, $product);
+            $this->productServiceImpl->update($id, $product);
             header('Location: index.php');
         }
     }
@@ -55,7 +55,7 @@ class ProductController
     {
         if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             $id = $_GET['id'];
-            $product = $this->productRepository->get($id);
+            $product = $this->productServiceImpl->get($id);
             include 'view/detail.php';
         }
     }
@@ -64,11 +64,11 @@ class ProductController
     {
         if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             $id = $_GET['id'];
-            $product = $this->productRepository->get($id);
+            $product = $this->productServiceImpl->get($id);
             include 'view/delete.php';
         } else {
             $id = $_POST['id'];
-            $this->productRepository->delete($id);
+            $this->productServiceImpl->delete($id);
             header('Location: index.php');
         }
     }

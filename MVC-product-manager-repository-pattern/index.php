@@ -1,9 +1,13 @@
 <?php
 require "model/Product.php";
 require "model/DBConnection.php";
-require "model/ProductDB.php";
 require "controller/ProductController.php";
+require "repository/Repository.php";
 require "repository/ProductRepository.php";
+require "repository/QueryRepository.php";
+require "repository/ProductRepositoryImpl.php";
+require "service/ProductService.php";
+require "service/ProductServiceImpl.php";
 
 use Controller\ProductController;
 
