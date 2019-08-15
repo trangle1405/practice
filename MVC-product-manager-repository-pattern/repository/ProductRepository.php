@@ -14,30 +14,60 @@ class ProductRepository
     {
         $connection = new DBConnection("mysql:host=localhost;dbname=product_manager", "root", "");
         $this->productDB = new ProductDB($connection->connect());
-    }`------------`
+    }
 
     public function getAll()
     {
-        return $this->productDB->getAll();
+        try {
+            return $this->productDB->getAll();
+        } catch (Exception $e) {
+            self::disconnect();
+            throw $e;
+        }
+
     }
 
     public function create($product)
     {
-        return $this->productDB->create($product);
+        try {
+            return $this->productDB->create($product);
+        } catch (Exception $e) {
+            self::disconnect();
+            throw $e;
+        }
+
     }
 
     public function get($id)
     {
-        return $this->productDB->get($id);
+        try {
+            return $this->productDB->get($id);
+        } catch (Exception $e) {
+            self::disconnect();
+            throw $e;
+        }
+
     }
 
     public function update($id, $product)
     {
-        return $this->productDB->update($id, $product);
+        try {
+            return $this->productDB->update($id, $product);
+        } catch (Exception $e) {
+            self::disconnect();
+            throw $e;
+        }
+
     }
 
     public function delete($id)
     {
-        return $this->productDB->delete($id);
+        try {
+            return $this->productDB->delete($id);;
+        } catch (Exception $e) {
+            self::disconnect();
+            throw $e;
+        }
+
     }
 }

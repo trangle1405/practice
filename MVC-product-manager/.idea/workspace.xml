@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1861014b-bf5b-4ca2-a6bf-2c8e753a9057" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../MVC-product-manager-repository-pattern/.idea/MVC-product-manager.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVC-product-manager-repository-pattern/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVC-product-manager-repository-pattern/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVC-product-manager-repository-pattern/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../MVC-product-manager-repository-pattern/repository/ProductRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MVC-product-manager-repository-pattern/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../MVC-product-manager-repository-pattern/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -168,16 +163,15 @@
       <updated>1565681249684</updated>
       <workItem from="1565681251508" duration="6225000" />
       <workItem from="1565745384145" duration="11925000" />
-      <workItem from="1565769473552" duration="1656000" />
+      <workItem from="1565769473552" duration="1672000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19806000" />
+    <option name="totallyTimeSpent" value="19822000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49667773" visible="true" weight="0.27912253" />
       <window_info id="Structure" order="1" sideWeight="0.50332224" side_tool="true" weight="0.21013413" />
