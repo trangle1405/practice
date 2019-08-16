@@ -1,6 +1,5 @@
 <?php
 namespace Service;
-use Model\Product;
 use Model\DBConnection;
 use Repository\ProductRepositoryImpl;
 class ProductServiceImpl implements ProductService

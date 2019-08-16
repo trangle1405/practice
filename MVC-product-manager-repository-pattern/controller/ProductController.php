@@ -3,7 +3,7 @@
 namespace Controller;
 
 use Model\Product;
-use Service\ProductServiceImpl;
+use Service\ProductService;
 
 
 class ProductController
