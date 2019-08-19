@@ -1,34 +1,16 @@
-<html>
-
-<head>
-    <title>Gửi email trong PHP</title>
-</head>
-
-<body>
-
 <?php
-$to = "xyz@somedomain.com";
-$subject = "Đây là subject";
 
-$message = "<b>Đây là HTML Message.</b>";
-$message .= "<h1>Đây là headline.</h1>";
+session_start(); //start the PHP_session function
 
-$header = "From:abc@somedomain.com \r\n";
-$header = "Cc:afgh@somedomain.com \r\n";
-$header .= "MIME-Version: 1.0\r\n";
-$header .= "Content-type: text/html\r\n";
-
-$retval = mail ($to,$subject,$message,$header);
-
-if( $retval == true )
+if(isset($_SESSION['page_count']))
 {
-    echo "Gửi email thành công ...";
+    $_SESSION['page_count'] += 1;
 }
 else
 {
-    echo "Không thể gửi email ...";
+    $_SESSION['page_count'] = 1;
 }
-?>
+echo 'You are visitor number ' . $_SESSION['page_count'];
+session_destroy()
 
-</body>
-</html>
+?>
